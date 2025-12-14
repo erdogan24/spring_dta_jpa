@@ -1,5 +1,7 @@
 package com.erdoganakpolat.services;
 
-public interface IStudentService {
+import com.erdoganakpolat.entities.Student;
 
+public interface IStudentService {
+	public Student saveStudent(Student student);
 }
