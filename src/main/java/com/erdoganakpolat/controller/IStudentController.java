@@ -1,5 +1,8 @@
 package com.erdoganakpolat.controller;
 
-public interface IStudentController {
+import com.erdoganakpolat.entities.Student;
 
+public interface IStudentController {
+	
+	public Student saveStudent(Student student);
 }
