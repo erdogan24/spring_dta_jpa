@@ -1,6 +1,8 @@
 
 package com.erdoganakpolat.controller.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +26,12 @@ public class StudentControllerImpl implements IStudentController{
 	public Student saveStudent(@RequestBody Student student) {
 
 		return studentService.saveStudent(student);
+	}
+
+	@Override
+	public List<Student> getAllStudents() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

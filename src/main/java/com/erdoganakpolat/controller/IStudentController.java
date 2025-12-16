@@ -1,8 +1,12 @@
 package com.erdoganakpolat.controller;
 
+import java.util.List;
+
 import com.erdoganakpolat.entities.Student;
 
 public interface IStudentController {
 	
 	public Student saveStudent(Student student);
+	
+	public List<Student> getAllStudents();
 }
