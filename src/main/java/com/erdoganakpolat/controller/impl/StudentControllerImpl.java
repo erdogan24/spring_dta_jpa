@@ -37,8 +37,8 @@ public class StudentControllerImpl implements IStudentController{
 
 	@Override
 	public Student getStudentById(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return  studentService.getStudentById(id);
 	}
 
 }
