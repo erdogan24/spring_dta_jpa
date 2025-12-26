@@ -50,6 +50,8 @@ public class StudentServiceImpl implements IStudentService{
 		 dbStudent.setFirstName(updateStudent.getFirstName());
 		 dbStudent.setLastName(updateStudent.getLastName());
 		 dbStudent.setBirthOfDate(updateStudent.getBirthOfDate());
+		 
+		 studentRepository.save(dbStudent);
 	 }
 		return null;
 	}
