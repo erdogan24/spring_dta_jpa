@@ -37,6 +37,15 @@ public class Student {
 	@Column(name="birt_of_date", nullable = true)
 	private Date birthOfDate;
 
+	
+	public Student(Integer id, String firstName, String lastName, Date birthOfDate) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthOfDate = birthOfDate;
+	}
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -67,14 +76,4 @@ public class Student {
 				+ birthOfDate + "]";
 	}
 
-	public Student(Integer id, String firstName, String lastName, Date birthOfDate) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.birthOfDate = birthOfDate;
-	}
-	
-	
-	
 }
