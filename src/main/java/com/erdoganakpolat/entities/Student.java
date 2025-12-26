@@ -36,5 +36,45 @@ public class Student {
 	@JsonFormat(pattern="yyyy-MM-dd")
 	@Column(name="birt_of_date", nullable = true)
 	private Date birthOfDate;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public Date getBirthOfDate() {
+		return birthOfDate;
+	}
+
+	public void setBirthOfDate(Date birthOfDate) {
+		this.birthOfDate = birthOfDate;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", birthOfDate="
+				+ birthOfDate + "]";
+	}
+
+	public Student(Integer id, String firstName, String lastName, Date birthOfDate) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.birthOfDate = birthOfDate;
+	}
+	
+	
 	
 }
